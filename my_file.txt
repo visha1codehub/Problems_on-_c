@@ -1,0 +1,4 @@
+I am writing in the file by file write mode in c.
+
+fileptr = fopen("my_file.txt","w");
+    fprintf(fileptr,"%s",string);I am writing in the file by file write mode in c.I am writing in the file by file write mode in c.I am writing in the file by file write mode in c.
