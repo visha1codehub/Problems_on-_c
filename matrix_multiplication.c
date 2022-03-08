@@ -69,8 +69,9 @@ int main()
                 }
             }
         }
-        
-        printf("The multiplicatoin of the above matrix is :\n");        for (int i = 0; i < m; i++)
+
+        printf("The multiplicatoin of the above matrix is :\n");
+        for (int i = 0; i < m; i++)
         {
             for (int j = 0; j < p; j++)
             {

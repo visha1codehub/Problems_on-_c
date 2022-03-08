@@ -9,5 +9,20 @@ int main()
     // length
     int length = arraySize / intSize;
     printf("%d",length);
+
+
+
+    int len;
+
+
+    len = sizeof(ary)/sizeof(ary[0]);
+    printf("%d",len);
+
+    
+
+
+
+
+
     return 0;
 }

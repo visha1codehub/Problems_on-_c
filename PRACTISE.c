@@ -82,7 +82,108 @@ int main()
   
     //     count++;  
     // }  
-  
+    int n;
+    printf("Enter the number of terms : ");
+    scanf("%d",&n);
+
+    // //Simple Stat pattern//
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     for (int j = 1; j <= i; j++)
+    //     {
+    //         printf("* ");
+    //     }
+    //     printf("\n");
+    // }
+    
+    // //Reverse Star pattern//
+    // for (int i = n+1; i >= 1; i--)
+    // {
+    //     for (int j = i; j >= 1; j--)
+    //     {
+    //         printf("* ");
+    //     }
+    //     printf("\n");
+    // }
+    
+    // // Simple Pyramid//
+    // for (int i = n; i >= 1; i--)
+    // {
+    //     for (int j = i; j > 1; j--)
+    //     {
+    //         printf("  ");
+    //     }
+    //     for (int j = 0; j <= 2*(n-i); j++)
+    //     {
+    //         printf("* ");
+    //     }
+        
+    //     printf("\n");
+    // }
+    // //Reverse pyramid//
+    // for (int i = 2; i <= n; i++)
+    // {
+    //     for (int j = i; j > 1; j--)
+    //     {
+    //         printf("  ");
+    //     }
+    //     for (int j = 0; j <= 2*(n-i); j++)
+    //     {
+    //         printf("* ");
+    //     }
+        
+    //     printf("\n");
+    // }
+
+    // for (int i = 2; i <= n; i++)
+    // {
+    //     for (int j = i; j <= n; j++)
+    //     {
+    //         printf("%d",j);
+    //     }
+    //     printf("\n");
+        
+    // }
+    
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     for (int j = 1; j <= n; j++)
+    //     {
+    //         if (i-j == 0)
+    //         {
+    //             printf("%d",j);
+    //         }
+            
+    //         else if ((i+j == n+1) && (i !=  j))
+    //         {
+    //             printf("%d",j);
+    //         }
+    //         else
+    //         {
+    //             printf(" ");
+    //         }
+            
+    //     }
+    //     printf("\n");
+        
+    // }
+    // char arr[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    // for (int i = n; i >= 1; i--)
+    // {
+    //     for (int j = 1; j < i; j++)
+    //     {
+    //         printf("  ");
+    //     }
+    //     for (int j = 1; j <= 2*(n-i+1)-1; j++)
+    //     {
+    //         printf(" %c",arr[j-1]);
+    //     }
+    //     printf("\n");
+    // }
+
+    
+    
      return 0;
 } 
     
