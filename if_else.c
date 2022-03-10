@@ -27,7 +27,6 @@ int main()
         printf("You have passed in science.\n");
         printf("You got 15 rupees as reward.\n");
     }
-    
 
     return 0;
 }

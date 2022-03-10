@@ -1,4 +1,3 @@
-I am writing in the file by file write mode in c.
+This is in appending mode.......
+Let's try to append another file.....
 
-fileptr = fopen("my_file.txt","w");
-    fprintf(fileptr,"%s",string);I am writing in the file by file write mode in c.I am writing in the file by file write mode in c.I am writing in the file by file write mode in c.
