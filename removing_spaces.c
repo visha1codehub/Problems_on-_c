@@ -1,5 +1,28 @@
 // /* C program to remove spaces from a string */
 
+#include <stdio.h>
+
+int main()
+{
+    char str[50];
+    printf("Enter a string : ");
+    fgets(str,sizeof(str),stdin);
+
+    int i = 0, j = 0;
+    while (str[i])
+    {
+        if (str[i] != ' ')
+        {
+            str[j] = str[i];
+            j++;
+        }
+        i++;
+    }
+    str[j] = '\0';
+    puts(str);
+    return 0;
+}
+
 // #include <stdio.h>
 
 // char *remove_white_spaces(char *str)
@@ -25,25 +48,6 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-
-int main()
-{
-    char str[50];
-    printf("Enter a string : ");
-    fgets(str,sizeof(str),stdin);
-
-    int i = 0, j = 0;
-    while (str[i])
-    {
-        if (str[i] != ' ')
-            str[j++] = str[i];
-        i++;
-    }
-    str[j] = '\0';
-    puts(str);
-    return 0;
-}
 // #include <stdio.h>
 // #include <string.h>
 

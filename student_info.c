@@ -24,7 +24,7 @@ int main()
         printf("Enter marks: ");
         scanf("%f",&std[i].marks);
     }
-    printf("Displaying information....\n");
+    printf("\nDisplaying information....\n");
     for (int i = 1; i <= n; i++)
     {
         printf("\nImformation of student %d:\n",n);

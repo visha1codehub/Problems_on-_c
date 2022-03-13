@@ -82,9 +82,9 @@ int main()
   
     //     count++;  
     // }  
-    int n;
-    printf("Enter the number of terms : ");
-    scanf("%d",&n);
+    // int n;
+    // printf("Enter the number of terms : ");
+    // scanf("%d",&n);
 
     // //Simple Stat pattern//
     // for (int i = 1; i <= n; i++)
@@ -181,9 +181,13 @@ int main()
     //     }
     //     printf("\n");
     // }
-    
-    
-    
+    char ar[5] = {'a','s','h','\0'};
+    printf("%c\n",ar[0]);
+    printf("%c\n",ar[1]);
+    printf("%c\n",ar[2]);
+    printf("%d\n",ar[3]);
+    printf("%d\n",ar[4]);
+    printf("%d\n",ar[5]);
      return 0;
 } 
     
