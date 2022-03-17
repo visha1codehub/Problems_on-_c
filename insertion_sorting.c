@@ -4,13 +4,14 @@ int ins_sort(int ary[], int n)
     int temp;
     for (int i = 0; i < n; i++)
     {
-        for (int j = i; j < 0; j--)
+        for (int j = i; j >= 0; j--)
         {
-            if (ary[j] < ary[i])
+            if (ary[j] > ary[i])
             {
                 temp = ary[i];
                 ary[i] = ary[j];
                 ary[j] = temp;
+                break;
             }
         }
     }
