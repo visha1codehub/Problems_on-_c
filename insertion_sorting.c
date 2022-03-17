@@ -1,19 +1,27 @@
 #include <stdio.h>
 int ins_sort(int ary[], int n)
 {
-    int temp;
-    for (int i = 0; i < n; i++)
+    int pos, temp;
+    for (int i = 1; i < n; i++)
     {
         for (int j = i; j >= 0; j--)
         {
-            if (ary[j] > ary[i])
+            if (ary[j] < ary[i])
             {
-                temp = ary[i];
-                ary[i] = ary[j];
-                ary[j] = temp;
+                pos = j+1;
                 break;
             }
+            else
+                pos = 0;
         }
+        // Shift the elements of the array
+        
+        temp = ary[i];
+        for (int k = i; k >= pos; k--)
+        {
+            ary[k] = ary[k - 1];
+        }
+        ary[pos] = temp;
     }
 }
 void print_arr(int ary[], int n)
