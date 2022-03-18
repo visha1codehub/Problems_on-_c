@@ -15,6 +15,13 @@ int main()
                 printf(" ");
             }
         }
+        for (int k = 0; k < 7; k++)
+        {
+            if (k == 0)
+            {
+                printf(" ");
+            }
+        }
 
         for (int j = 0; j < 7; j++)
         {
@@ -23,6 +30,13 @@ int main()
                 printf("*");
             }
             else
+            {
+                printf(" ");
+            }
+        }
+        for (int k = 0; k < 7; k++)
+        {
+            if (k == 0)
             {
                 printf(" ");
             }
@@ -39,6 +53,13 @@ int main()
                 printf(" ");
             }
         }
+        for (int k = 0; k < 7; k++)
+        {
+            if (k == 0)
+            {
+                printf(" ");
+            }
+        }
 
         for (int j = 0; j < 7; j++)
         {
@@ -51,6 +72,13 @@ int main()
                 printf(" ");
             }
         }
+        for (int k = 0; k < 7; k++)
+        {
+            if (k == 0)
+            {
+                printf(" ");
+            }
+        }
 
         for (int j = 0; j < 7; j++)
         {
@@ -59,6 +87,13 @@ int main()
                 printf("*");
             }
             else
+            {
+                printf(" ");
+            }
+        }
+        for (int k = 0; k < 7; k++)
+        {
+            if (k == 0)
             {
                 printf(" ");
             }
