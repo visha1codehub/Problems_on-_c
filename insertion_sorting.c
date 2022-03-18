@@ -14,8 +14,8 @@ int ins_sort(int ary[], int n)
             else
                 pos = 0;
         }
-        // Shift the elements of the array
-        
+
+        // Shift the elements of the array 
         temp = ary[i];
         for (int k = i; k >= pos; k--)
         {

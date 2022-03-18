@@ -1,16 +1,16 @@
 #include <stdio.h>
 int sort_arr(int ary[], int n)
 {
-    int a;
+    int temp;
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
             if (ary[i] < ary[j])
             {
-                a = ary[i];
+                temp = ary[i];
                 ary[i] = ary[j];
-                ary[j] = a;
+                ary[j] = temp;
             }
         }
     }
