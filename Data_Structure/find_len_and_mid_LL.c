@@ -5,22 +5,37 @@ struct Node
     int data;
     struct Node *next;
 };
+void LLprint(struct Node *ptr)
+{
+    while (ptr != NULL)
+    {
+        printf("%d->", ptr->data);
+        ptr = ptr->next;
+    }
+    printf("NULL\n");
+}
 int LL_len(struct Node *ptr)
 {
     int i = 0;
-    int temp = i;
     do
     {
         i++;
         ptr = ptr->next;
     }while (ptr != NULL);
-    while (temp != i/2)
+    return i;
+}
+void find_middle(struct Node *ptr, int ln)
+{
+    int i = 1;
+    while (i != ln/2)
     {
         ptr = ptr->next;
-        temp++;
+        i++;
     }
-    printf("Middle is %d\n.",ptr->data);
-    return i;
+    if (ln%2 != 0)
+        printf("Middle is %d.\n",ptr->next->data);
+    else
+        printf("Middles are %d and %d.\n",ptr->data,ptr->next->data);
 }
 int main()
 {
@@ -45,7 +60,9 @@ int main()
     sixth->next = seventh;
     seventh->data = 70;
     seventh->next = NULL;
+    LLprint(head);
     int len = LL_len(head);
     printf("The length of Linked list is %d.\n",len);
+    find_middle(head, len);
     return 0;
 }
