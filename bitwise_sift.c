@@ -12,7 +12,13 @@ int func(int num)
 }
 int main()
 {
-    int c = func(435);
-    printf("%d\n",c);
+    // int c = func(435);
+    // printf("%d\n",c);
+
+
+
+    int a = 128;
+    a = a<<3;
+    printf("%d\n",a);
     return 0;
 }

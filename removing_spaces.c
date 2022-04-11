@@ -1,12 +1,14 @@
 // /* C program to remove spaces from a string */
 
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
     char str[50];
+    int l;
     printf("Enter a string : ");
-    fgets(str,sizeof(str),stdin);
+    fgets(str, sizeof(str), stdin);
 
     int i = 0, j = 0;
     while (str[i])
@@ -19,7 +21,9 @@ int main()
         i++;
     }
     str[j] = '\0';
-    puts(str);
+    printf("%s", str);
+    l = strlen(str);
+    printf("%d\n", l - 1);
     return 0;
 }
 
