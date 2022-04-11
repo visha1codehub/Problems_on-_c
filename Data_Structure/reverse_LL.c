@@ -56,7 +56,7 @@ int main()
 {
     struct Node *head = NULL;
     int n;
-    printf("Enter how many numbers of nodes in Linked List: ");
+    printf("Enter total numbers of nodes in Linked List: ");
     scanf("%d", &n);
     head = push(head, n);
     LLprint(head);
