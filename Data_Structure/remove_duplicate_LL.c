@@ -38,19 +38,22 @@ void LLprint(struct Node *ptr)
     }
     printf("NULL\n");
 }
-struct Node *LL_Rev(struct Node *head)
+struct Node *rm_duplicate(struct Node *head)
 {
-    struct Node *prev = NULL;
-    struct Node *curr = head;
-    struct Node *nex = NULL;
-    while (curr != NULL)
+    struct Node *temp1 = head;
+    while (temp1 != NULL)
     {
-        nex = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = nex;
+        struct Node *temp2 = head->next;
+        while (temp2 != NULL)
+        {
+            if (temp1->data == temp2->data)
+            {
+                temp2->next = temp2->next->next;
+            }
+            temp2 = temp2->next;
+        }
+        temp1 = temp1->next;
     }
-    head = prev;
     return head;
 }
 int main()
@@ -61,7 +64,7 @@ int main()
     scanf("%d", &n);
     head = push(head, n);
     LLprint(head);
-    head = LL_Rev(head);
+    head = rm_duplicate(head);
     LLprint(head);
     return 0;
 }
