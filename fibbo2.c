@@ -1,6 +1,8 @@
 #include <stdio.h>
+static int count = 0;
 int fibbo(int n)
 {
+    count++;
     if (n == 0 || n == 1)
     {
         return 0;
@@ -23,7 +25,7 @@ int main()
     {
         printf("%d  ", fibbo(i));
     }
-    printf("\n");
+    printf("\n%d\n", count);
 
     return 0;
 }

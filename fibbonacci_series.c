@@ -1,23 +1,22 @@
 #include <stdio.h>
-void print_fibo(int x, int y, int z)
+long int fibo(int n)
 {
-    int w;
-    if (z >= 3)
+    long int arr[n+2];
+    long int i;
+    arr[0] = 0;
+    arr[1] = 1;
+    for (i = 2; i <= n; i++)
     {
-        w = x + y;
-        printf("%d ", w);
-        z = z - 1;
-        print_fibo(y, w, z);
+        arr[i] = arr[i-1] + arr[i-2];
     }
+    return arr[n];
+    
 }
 int main()
 {
-    int n1 = 0, n2 = 1, terms;
-    printf("Enter the number of terms : ");
-    scanf("%d", &terms);
-    printf("fibonacci series.....\n");
-    printf("%d %d ", n1, n2);
-    print_fibo(n1, n2, terms);
-    printf("\n");
+    int num ;
+    printf("Enter the number of term : ");
+    scanf("%d", &num);
+    printf("%ld\n", fibo(num));
     return 0;
 }
