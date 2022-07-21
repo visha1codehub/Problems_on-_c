@@ -278,7 +278,7 @@ void main()
     //         k++;
     //     }
     //     printf("\n");
-        
+
     // }
     // for (int i = 4; i >= 1; i--)
     // {
@@ -287,7 +287,7 @@ void main()
     //         printf("%d ",i-j);
     //     }
     //     printf("\n");
-        
+
     // }
 
     // float a = 12.233456776543;
@@ -296,7 +296,6 @@ void main()
     // printf("%lf\n",b);
     // printf("%ld\n",sizeof(a));
     // printf("%ld\n",sizeof(b));
-
 
     // int i;
     // for ( i = 0; i < 5; i++);
@@ -323,7 +322,14 @@ void main()
     // int a;
     // a = 1/2*3+1-2;
     // printf("%d\n",a);
-    
-    int a =189;
-    printf("%d\n",~a);
+
+    // int a =189;
+    // printf("%d\n",~a);
+
+    int j = 1, num1 = 4;
+    while (++j <= 10)
+    {
+        num1++;
+    }
+    printf("%d\n", num1);
 }

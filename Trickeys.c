@@ -1,5 +1,5 @@
-// // C program to print maximum value of
-// // unsigned int.
+// // C program to print maximum value of unsigned int.
+
 // #include<stdio.h>
 
 // int main()
